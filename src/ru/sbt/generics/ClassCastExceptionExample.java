@@ -9,6 +9,7 @@ public class ClassCastExceptionExample {
         List<Integer> list = new ArrayList<Integer>();
         list.add(1);
         list.add(2);
+
         example.process(list);
     }
 }
