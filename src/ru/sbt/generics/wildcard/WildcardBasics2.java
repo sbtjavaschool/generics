@@ -42,7 +42,7 @@ public class WildcardBasics2 {
         });
     }
 
-    static<T extends Animal>  Animal max(List<T> animals, Comparator<? super T> comparator) {
+    static <T extends Animal> Animal max(List<? extends T> animals, Comparator<? super T> comparator) {
         if (animals.isEmpty()) return null;
 
         T max = animals.get(0);
